@@ -15,6 +15,21 @@ By running main.py, the sensors get initialized and asked about their values in 
 ```shell
 pip3 install kivy
 pip3 install Adafruit_DHT
+pip3 install ntplib
+```
+
+## Autostart
+
+Edit ` /etc/xdg/autostart/RPi-infoscreen.desktop` with
+
+```
+[Desktop Entry]
+Type=Application
+Name=RPi-infoscreen
+Comment=Kivy RPI Infoscreen
+NoDisplay=false
+Exec=/usr/bin/lxterminal -e $(GIT_ROOT_DIR)/src/start_app.sh
+NotShowIn=GNOME;KDE;XFCE;
 ```
 
 ## Schematic
