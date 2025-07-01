@@ -1,4 +1,4 @@
-# logfile_analysis_for_random_experiment
+# roomclimate_python_kivy
 
 A project for a rasperry pi, written in python to display different room climate and showing a wet, sweating or freezing smiley.
 
